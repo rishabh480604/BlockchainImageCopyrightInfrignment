@@ -1,0 +1,475 @@
+<pre><font color="#26A269"><b>anonymous@anonymous-virtual-machine</b></font>:<font color="#12488B"><b>~/Desktop/Minifab</b></font>$ ./network.sh
+Start  the Network
+Using spec file: /home/anonymous/Desktop/Minifab/spec.yaml
+Minifab Execution Context:
+    FABRIC_RELEASE=2.4.8
+    CHANNEL_NAME=mychannel
+    PEER_DATABASE_TYPE=couchdb
+    CHAINCODE_LANGUAGE=go
+    CHAINCODE_NAME=simple
+    CHAINCODE_VERSION=1.0
+    CHAINCODE_INIT_REQUIRED=true
+    CHAINCODE_PARAMETERS=&quot;init&quot;,&quot;a&quot;,&quot;200&quot;,&quot;b&quot;,&quot;300&quot;
+    CHAINCODE_PRIVATE=false
+    CHAINCODE_POLICY=
+    TRANSIENT_DATA=
+    BLOCK_NUMBER=newest
+    EXPOSE_ENDPOINTS=true
+    CURRENT_ORG=admin.image.com
+    HOST_ADDRESSES=192.168.32.130
+    TARGET_ENV=DOCKER
+    WORKING_DIRECTORY: /home/anonymous/Desktop/Minifab
+.....
+<b># Preparing for the following operations: *********************</b>
+  <font color="#26A269">verify options, download images, generate certificates, start network, network status</font>
+...................
+<b># Running operation: ******************************************</b>
+  <font color="#26A269">verify options</font>
+..
+<b># Running operation: ******************************************</b>
+  <font color="#26A269">download images</font>
+............
+<b># Running operation: ******************************************</b>
+  <font color="#26A269">generate certificates</font>
+....................................................................................................................
+<b># Running operation: ******************************************</b>
+  <font color="#26A269">start network</font>
+.........................
+<b># Running operation: ******************************************</b>
+  <font color="#26A269">network status</font>
+...
+<b># Current Minifabric image ID and created at date time ********</b>
+  <font color="#26A269">e0d71f9ae04f   2023-04-29 14:46:05 +0000 UTC</font>
+.....
+<b># Docker node status ******************************************</b>
+<font color="#26A269">  a7d28356f2_cli : Up 18 seconds</font>
+<font color="#26A269">  ca1.customer.image.com : Up 27 seconds</font>
+<font color="#26A269">  ca1.admin.image.com : Up 35 seconds</font>
+<font color="#26A269">  orderer2.image.com : Up 43 seconds</font>
+<font color="#26A269">  orderer1.image.com : Up 52 seconds</font>
+<font color="#26A269">  peer1.customer.image.com : Up About a minute</font>
+<font color="#26A269">  peer1.admin.image.com : Up About a minute</font>
+<font color="#26A269">  peer1.customer.image.com.couchdb : Up About a minute</font>
+<font color="#26A269">  peer1.admin.image.com.couchdb : Up About a minute</font>
+
+<b># Fabric network peer and orderer node health status **********</b>
+<font color="#26A269">  peer1.admin.image.com &quot;OK&quot;</font>
+<font color="#26A269">  peer1.customer.image.com &quot;OK&quot;</font>
+<font color="#26A269">    orderer1.image.com &quot;OK&quot;</font>
+<font color="#26A269">    orderer2.image.com &quot;OK&quot;</font>
+<font color="#26A269">  Network Status: 100%</font>
+
+
+<b># STATS *******************************************************</b>
+<font color="#26A269">minifab: ok=210</font>	<font color="#26A269">failed=0</font>	
+
+real	8m6.297s
+user	4m13.298s
+sys	1m43.337s
+create the channel
+Using spec file: /home/anonymous/Desktop/Minifab/spec.yaml
+Minifab Execution Context:
+    FABRIC_RELEASE=2.4.8
+    CHANNEL_NAME=autochannel
+    PEER_DATABASE_TYPE=couchdb
+    CHAINCODE_LANGUAGE=go
+    CHAINCODE_NAME=simple
+    CHAINCODE_VERSION=1.0
+    CHAINCODE_INIT_REQUIRED=true
+    CHAINCODE_PARAMETERS=&quot;init&quot;,&quot;a&quot;,&quot;200&quot;,&quot;b&quot;,&quot;300&quot;
+    CHAINCODE_PRIVATE=false
+    CHAINCODE_POLICY=
+    TRANSIENT_DATA=
+    BLOCK_NUMBER=newest
+    EXPOSE_ENDPOINTS=true
+    CURRENT_ORG=admin.image.com
+    HOST_ADDRESSES=192.168.32.130
+    TARGET_ENV=DOCKER
+    WORKING_DIRECTORY: /home/anonymous/Desktop/Minifab
+.....
+<b># Preparing for the following operations: *********************</b>
+  <font color="#26A269">verify options, channel create</font>
+...................
+<b># Running operation: ******************************************</b>
+  <font color="#26A269">verify options</font>
+..
+<b># Running operation: ******************************************</b>
+  <font color="#26A269">channel create</font>
+......
+
+<b># STATS *******************************************************</b>
+<font color="#26A269">minifab: ok=36</font>	<font color="#26A269">failed=0</font>	
+
+real	0m44.802s
+user	0m27.591s
+sys	0m6.747s
+ Join the peers to the channel
+Using spec file: /home/anonymous/Desktop/Minifab/spec.yaml
+Minifab Execution Context:
+    FABRIC_RELEASE=2.4.8
+    CHANNEL_NAME=autochannel
+    PEER_DATABASE_TYPE=couchdb
+    CHAINCODE_LANGUAGE=go
+    CHAINCODE_NAME=simple
+    CHAINCODE_VERSION=1.0
+    CHAINCODE_INIT_REQUIRED=true
+    CHAINCODE_PARAMETERS=&quot;init&quot;,&quot;a&quot;,&quot;200&quot;,&quot;b&quot;,&quot;300&quot;
+    CHAINCODE_PRIVATE=false
+    CHAINCODE_POLICY=
+    TRANSIENT_DATA=
+    BLOCK_NUMBER=newest
+    EXPOSE_ENDPOINTS=true
+    CURRENT_ORG=admin.image.com
+    HOST_ADDRESSES=192.168.32.130
+    TARGET_ENV=DOCKER
+    WORKING_DIRECTORY: /home/anonymous/Desktop/Minifab
+.....
+<b># Preparing for the following operations: *********************</b>
+  <font color="#26A269">verify options, channel join</font>
+.......
+<b># Running operation: ******************************************</b>
+  <font color="#26A269">verify options</font>
+..
+<b># Running operation: ******************************************</b>
+  <font color="#26A269">channel join</font>
+...............
+
+<b># STATS *******************************************************</b>
+<font color="#26A269">minifab: ok=34</font>	<font color="#26A269">failed=0</font>	
+
+real	0m35.659s
+user	0m26.974s
+sys	0m6.736s
+Anchor update
+Using spec file: /home/anonymous/Desktop/Minifab/spec.yaml
+Minifab Execution Context:
+    FABRIC_RELEASE=2.4.8
+    CHANNEL_NAME=autochannel
+    PEER_DATABASE_TYPE=couchdb
+    CHAINCODE_LANGUAGE=go
+    CHAINCODE_NAME=simple
+    CHAINCODE_VERSION=1.0
+    CHAINCODE_INIT_REQUIRED=true
+    CHAINCODE_PARAMETERS=&quot;init&quot;,&quot;a&quot;,&quot;200&quot;,&quot;b&quot;,&quot;300&quot;
+    CHAINCODE_PRIVATE=false
+    CHAINCODE_POLICY=
+    TRANSIENT_DATA=
+    BLOCK_NUMBER=newest
+    EXPOSE_ENDPOINTS=true
+    CURRENT_ORG=admin.image.com
+    HOST_ADDRESSES=192.168.32.130
+    TARGET_ENV=DOCKER
+    WORKING_DIRECTORY: /home/anonymous/Desktop/Minifab
+.....
+<b># Preparing for the following operations: *********************</b>
+  <font color="#26A269">verify options, anchor update</font>
+.......
+<b># Running operation: ******************************************</b>
+  <font color="#26A269">verify options</font>
+..
+<b># Running operation: ******************************************</b>
+  <font color="#26A269">anchor update</font>
+............
+
+<b># STATS *******************************************************</b>
+<font color="#26A269">minifab: ok=31</font>	<font color="#26A269">failed=0</font>	
+
+real	0m31.432s
+user	0m23.852s
+sys	0m5.697s
+Profile Generation
+Using spec file: /home/anonymous/Desktop/Minifab/spec.yaml
+Minifab Execution Context:
+    FABRIC_RELEASE=2.4.8
+    CHANNEL_NAME=autochannel
+    PEER_DATABASE_TYPE=couchdb
+    CHAINCODE_LANGUAGE=go
+    CHAINCODE_NAME=simple
+    CHAINCODE_VERSION=1.0
+    CHAINCODE_INIT_REQUIRED=true
+    CHAINCODE_PARAMETERS=&quot;init&quot;,&quot;a&quot;,&quot;200&quot;,&quot;b&quot;,&quot;300&quot;
+    CHAINCODE_PRIVATE=false
+    CHAINCODE_POLICY=
+    TRANSIENT_DATA=
+    BLOCK_NUMBER=newest
+    EXPOSE_ENDPOINTS=true
+    CURRENT_ORG=admin.image.com
+    HOST_ADDRESSES=192.168.32.130
+    TARGET_ENV=DOCKER
+    WORKING_DIRECTORY: /home/anonymous/Desktop/Minifab
+.....
+<b># Preparing for the following operations: *********************</b>
+  <font color="#26A269">verify options, profile generation</font>
+.......
+<b># Running operation: ******************************************</b>
+  <font color="#26A269">verify options</font>
+..
+<b># Running operation: ******************************************</b>
+  <font color="#26A269">profile generation</font>
+.................................
+
+<b># STATS *******************************************************</b>
+<font color="#26A269">minifab: ok=53</font>	<font color="#26A269">failed=0</font>	
+
+real	0m56.291s
+user	0m45.187s
+sys	0m13.399s
+<font color="#26A269"><b>anonymous@anonymous-virtual-machine</b></font>:<font color="#12488B"><b>~/Desktop/Minifab</b></font>$ sudo chmod -R 777 vars/
+<font color="#26A269"><b>anonymous@anonymous-virtual-machine</b></font>:<font color="#12488B"><b>~/Desktop/Minifab</b></font>$ mkdir -p vars/chaincode/VIT-chain/go
+<font color="#26A269"><b>anonymous@anonymous-virtual-machine</b></font>:<font color="#12488B"><b>~/Desktop/Minifab</b></font>$ cp -r ../Chaincode/* vars/chaincode/VIT-chain/go/
+<font color="#26A269"><b>anonymous@anonymous-virtual-machine</b></font>:<font color="#12488B"><b>~/Desktop/Minifab</b></font>$ minifab ccup -n VIT-chain -l go -v 1.0 -d false -r false
+Using spec file: /home/anonymous/Desktop/Minifab/spec.yaml
+Minifab Execution Context:
+    FABRIC_RELEASE=2.4.8
+    CHANNEL_NAME=autochannel
+    PEER_DATABASE_TYPE=couchdb
+    CHAINCODE_LANGUAGE=go
+    CHAINCODE_NAME=VIT-chain
+    CHAINCODE_VERSION=1.0
+    CHAINCODE_INIT_REQUIRED=false
+    CHAINCODE_PARAMETERS=&quot;init&quot;,&quot;a&quot;,&quot;200&quot;,&quot;b&quot;,&quot;300&quot;
+    CHAINCODE_PRIVATE=false
+    CHAINCODE_POLICY=
+    TRANSIENT_DATA=
+    BLOCK_NUMBER=newest
+    EXPOSE_ENDPOINTS=true
+    CURRENT_ORG=admin.image.com
+    HOST_ADDRESSES=192.168.32.130
+    TARGET_ENV=DOCKER
+    WORKING_DIRECTORY: /home/anonymous/Desktop/Minifab
+.....
+<b># Preparing for the following operations: *********************</b>
+  <font color="#26A269">verify options, cc install, cc approve, cc commit, cc initialize, discover, channel query</font>
+.......
+<b># Running operation: ******************************************</b>
+  <font color="#26A269">verify options</font>
+..
+<b># Running operation: ******************************************</b>
+  <font color="#26A269">cc install</font>
+.................
+<b># Running operation: ******************************************</b>
+  <font color="#26A269">cc approve</font>
+......
+<b># Running operation: ******************************************</b>
+  <font color="#26A269">cc commit</font>
+.............
+<b># Running operation: ******************************************</b>
+  <font color="#26A269">cc initialize</font>
+......
+<b># Running operation: ******************************************</b>
+  <font color="#26A269">discover</font>
+........................
+<b># Discover endorsers results **********************************</b>
+  <font color="#26A269">Chaincode endorsers file: ./vars/discover/autochannel/VIT-chain_endorsers.json</font>
+<b># Discover orderers results ***********************************</b>
+  <font color="#26A269">Channel orderers file: ./vars/discover/autochannel/ordererendpoints.json</font>
+<b># Running operation: ******************************************</b>
+  <font color="#26A269">channel query</font>
+......
+<b># Channel configuration query results *************************</b>
+  <font color="#26A269">Channel configuration file: ./vars/autochannel_config.json</font>
+
+<b># STATS *******************************************************</b>
+<font color="#26A269">minifab: ok=106</font>	<font color="#26A269">failed=0</font>	
+
+real	4m53.910s
+user	1m38.930s
+sys	0m26.913s
+<font color="#26A269"><b>anonymous@anonymous-virtual-machine</b></font>:<font color="#12488B"><b>~/Desktop/Minifab</b></font>$ minifab invoke -n VIT-chain -p &apos;&quot;RegisterImage&quot;,&quot;https://drive.google.com/uc?export=download&amp;id=1aP-udmiRwO9HROs1bJ_4k-F7iuNA0-7F&quot;,&quot;Nihar&quot;&apos;
+Using spec file: /home/anonymous/Desktop/Minifab/spec.yaml
+Minifab Execution Context:
+    FABRIC_RELEASE=2.4.8
+    CHANNEL_NAME=autochannel
+    PEER_DATABASE_TYPE=couchdb
+    CHAINCODE_LANGUAGE=go
+    CHAINCODE_NAME=VIT-chain
+    CHAINCODE_VERSION=1.0
+    CHAINCODE_INIT_REQUIRED=false
+    CHAINCODE_PARAMETERS=&quot;RegisterImage&quot;,&quot;https://drive.google.com/uc?export=download&amp;id=1aP-udmiRwO9HROs1bJ_4k-F7iuNA0-7F&quot;,&quot;Nihar&quot;
+    CHAINCODE_PRIVATE=false
+    CHAINCODE_POLICY=
+    TRANSIENT_DATA=
+    BLOCK_NUMBER=newest
+    EXPOSE_ENDPOINTS=true
+    CURRENT_ORG=admin.image.com
+    HOST_ADDRESSES=192.168.32.130
+    TARGET_ENV=DOCKER
+    WORKING_DIRECTORY: /home/anonymous/Desktop/Minifab
+.....
+<b># Preparing for the following operations: *********************</b>
+  <font color="#26A269">verify options, cc invoke</font>
+.......
+<b># Running operation: ******************************************</b>
+  <font color="#26A269">verify options</font>
+..
+<b># Running operation: ******************************************</b>
+  <font color="#26A269">cc invoke</font>
+...............
+<b># Chaincode invocation results ********************************</b>
+  <font color="#26A269">[&apos;\x1b[34m2024-11-13 17:01:57.169 UTC 0001 INFO\x1b[0m [chaincodeCmd] \x1b[34;1mchaincodeInvokeOrQuery\x1b[0m -&gt; Chaincode invoke successful. result: status:200 payload:&quot;Image registered successfully&quot; &apos;]</font>
+
+<b># STATS *******************************************************</b>
+<font color="#26A269">minifab: ok=34</font>	<font color="#26A269">failed=0</font>	
+
+real	0m35.987s
+user	0m24.147s
+sys	0m7.329s
+<font color="#26A269"><b>anonymous@anonymous-virtual-machine</b></font>:<font color="#12488B"><b>~/Desktop/Minifab</b></font>$ minifab invoke -n VIT-chain -p &apos;&quot;RegisterImage&quot;,&quot;https://drive.google.com/uc?export=download&amp;id=1zS86aPa74Zv22NLeOyjxuOP1fidIVkfs&quot;,&quot;Aniket&quot;&apos;
+Using spec file: /home/anonymous/Desktop/Minifab/spec.yaml
+Minifab Execution Context:
+    FABRIC_RELEASE=2.4.8
+    CHANNEL_NAME=autochannel
+    PEER_DATABASE_TYPE=couchdb
+    CHAINCODE_LANGUAGE=go
+    CHAINCODE_NAME=VIT-chain
+    CHAINCODE_VERSION=1.0
+    CHAINCODE_INIT_REQUIRED=false
+    CHAINCODE_PARAMETERS=&quot;RegisterImage&quot;,&quot;https://drive.google.com/uc?export=download&amp;id=1zS86aPa74Zv22NLeOyjxuOP1fidIVkfs&quot;,&quot;Aniket&quot;
+    CHAINCODE_PRIVATE=false
+    CHAINCODE_POLICY=
+    TRANSIENT_DATA=
+    BLOCK_NUMBER=newest
+    EXPOSE_ENDPOINTS=true
+    CURRENT_ORG=admin.image.com
+    HOST_ADDRESSES=192.168.32.130
+    TARGET_ENV=DOCKER
+    WORKING_DIRECTORY: /home/anonymous/Desktop/Minifab
+.....
+<b># Preparing for the following operations: *********************</b>
+  <font color="#26A269">verify options, cc invoke</font>
+.......
+<b># Running operation: ******************************************</b>
+  <font color="#26A269">verify options</font>
+..
+<b># Running operation: ******************************************</b>
+  <font color="#26A269">cc invoke</font>
+...............
+<b># Chaincode invocation results ********************************</b>
+  <font color="#26A269">[&apos;\x1b[34m2024-11-13 17:07:55.857 UTC 0001 INFO\x1b[0m [chaincodeCmd] \x1b[34;1mchaincodeInvokeOrQuery\x1b[0m -&gt; Chaincode invoke successful. result: status:200 payload:&quot;Image registered successfully&quot; &apos;]</font>
+
+<b># STATS *******************************************************</b>
+<font color="#26A269">minifab: ok=34</font>	<font color="#26A269">failed=0</font>	
+
+real	0m34.342s
+user	0m23.711s
+sys	0m6.269s
+<font color="#26A269"><b>anonymous@anonymous-virtual-machine</b></font>:<font color="#12488B"><b>~/Desktop/Minifab</b></font>$ minifab invoke -n VIT-chain -p &apos;&quot;RegisterImage&quot;,&quot;https://drive.google.com/uc?export=download&amp;id=1-hmUnOfn00Qj9vhIbfMeRF7D6gWDhmle&quot;,&quot;Aniket&quot;&apos;
+Using spec file: /home/anonymous/Desktop/Minifab/spec.yaml
+Minifab Execution Context:
+    FABRIC_RELEASE=2.4.8
+    CHANNEL_NAME=autochannel
+    PEER_DATABASE_TYPE=couchdb
+    CHAINCODE_LANGUAGE=go
+    CHAINCODE_NAME=VIT-chain
+    CHAINCODE_VERSION=1.0
+    CHAINCODE_INIT_REQUIRED=false
+    CHAINCODE_PARAMETERS=&quot;RegisterImage&quot;,&quot;https://drive.google.com/uc?export=download&amp;id=1-hmUnOfn00Qj9vhIbfMeRF7D6gWDhmle&quot;,&quot;Aniket&quot;
+    CHAINCODE_PRIVATE=false
+    CHAINCODE_POLICY=
+    TRANSIENT_DATA=
+    BLOCK_NUMBER=newest
+    EXPOSE_ENDPOINTS=true
+    CURRENT_ORG=admin.image.com
+    HOST_ADDRESSES=192.168.32.130
+    TARGET_ENV=DOCKER
+    WORKING_DIRECTORY: /home/anonymous/Desktop/Minifab
+.....
+<b># Preparing for the following operations: *********************</b>
+  <font color="#26A269">verify options, cc invoke</font>
+.......
+<b># Running operation: ******************************************</b>
+  <font color="#26A269">verify options</font>
+..
+<b># Running operation: ******************************************</b>
+  <font color="#26A269">cc invoke</font>
+...............
+<b># Chaincode invocation results ********************************</b>
+  <font color="#26A269">[&apos;\x1b[34m2024-11-13 17:08:45.076 UTC 0001 INFO\x1b[0m [chaincodeCmd] \x1b[34;1mchaincodeInvokeOrQuery\x1b[0m -&gt; Chaincode invoke successful. result: status:200 payload:&quot;An image similar to this already exists, owned by Nihar&quot; &apos;]</font>
+
+<b># STATS *******************************************************</b>
+<font color="#26A269">minifab: ok=34</font>	<font color="#26A269">failed=0</font>	
+
+real	0m31.167s
+user	0m22.057s
+sys	0m5.146s
+<font color="#26A269"><b>anonymous@anonymous-virtual-machine</b></font>:<font color="#12488B"><b>~/Desktop/Minifab</b></font>$ minifab query -n VIT-chain -p &apos;&quot;GetImagesByOwner&quot;,&quot;Nihar&quot;&apos;
+Using spec file: /home/anonymous/Desktop/Minifab/spec.yaml
+Minifab Execution Context:
+    FABRIC_RELEASE=2.4.8
+    CHANNEL_NAME=autochannel
+    PEER_DATABASE_TYPE=couchdb
+    CHAINCODE_LANGUAGE=go
+    CHAINCODE_NAME=VIT-chain
+    CHAINCODE_VERSION=1.0
+    CHAINCODE_INIT_REQUIRED=false
+    CHAINCODE_PARAMETERS=&quot;GetImagesByOwner&quot;,&quot;Nihar&quot;
+    CHAINCODE_PRIVATE=false
+    CHAINCODE_POLICY=
+    TRANSIENT_DATA=
+    BLOCK_NUMBER=newest
+    EXPOSE_ENDPOINTS=true
+    CURRENT_ORG=admin.image.com
+    HOST_ADDRESSES=192.168.32.130
+    TARGET_ENV=DOCKER
+    WORKING_DIRECTORY: /home/anonymous/Desktop/Minifab
+.....
+<b># Preparing for the following operations: *********************</b>
+  <font color="#26A269">verify options, cc query</font>
+.......
+<b># Running operation: ******************************************</b>
+  <font color="#26A269">verify options</font>
+..
+<b># Running operation: ******************************************</b>
+  <font color="#26A269">cc query</font>
+......
+<b># Chaincode query results *************************************</b>
+  <font color="#26A269">[&apos;[{&quot;hash&quot;:&quot;p:c5ce9ccc24728dd6&quot;,&quot;owner&quot;:&quot;Nihar&quot;}]&apos;]</font>
+
+<b># STATS *******************************************************</b>
+<font color="#26A269">minifab: ok=25</font>	<font color="#26A269">failed=0</font>	
+
+real	0m24.892s
+user	0m19.884s
+sys	0m5.196s
+<font color="#26A269"><b>anonymous@anonymous-virtual-machine</b></font>:<font color="#12488B"><b>~/Desktop/Minifab</b></font>$ minifab query -n VIT-chain -p &apos;&quot;GetAllImages&quot;&apos;
+Using spec file: /home/anonymous/Desktop/Minifab/spec.yaml
+Minifab Execution Context:
+    FABRIC_RELEASE=2.4.8
+    CHANNEL_NAME=autochannel
+    PEER_DATABASE_TYPE=couchdb
+    CHAINCODE_LANGUAGE=go
+    CHAINCODE_NAME=VIT-chain
+    CHAINCODE_VERSION=1.0
+    CHAINCODE_INIT_REQUIRED=false
+    CHAINCODE_PARAMETERS=&quot;GetAllImages&quot;
+    CHAINCODE_PRIVATE=false
+    CHAINCODE_POLICY=
+    TRANSIENT_DATA=
+    BLOCK_NUMBER=newest
+    EXPOSE_ENDPOINTS=true
+    CURRENT_ORG=admin.image.com
+    HOST_ADDRESSES=192.168.32.130
+    TARGET_ENV=DOCKER
+    WORKING_DIRECTORY: /home/anonymous/Desktop/Minifab
+.....
+<b># Preparing for the following operations: *********************</b>
+  <font color="#26A269">verify options, cc query</font>
+.......
+<b># Running operation: ******************************************</b>
+  <font color="#26A269">verify options</font>
+..
+<b># Running operation: ******************************************</b>
+  <font color="#26A269">cc query</font>
+......
+<b># Chaincode query results *************************************</b>
+  <font color="#26A269">[&apos;[{&quot;hash&quot;:&quot;p:c5ce9ccc24728dd6&quot;,&quot;owner&quot;:&quot;Nihar&quot;},{&quot;hash&quot;:&quot;p:dd97921ab4b59213&quot;,&quot;owner&quot;:&quot;Aniket&quot;}]&apos;]</font>
+
+<b># STATS *******************************************************</b>
+<font color="#26A269">minifab: ok=25</font>	<font color="#26A269">failed=0</font>	
+
+real	0m24.931s
+user	0m19.984s
+sys	0m5.160s
+<font color="#26A269"><b>anonymous@anonymous-virtual-machine</b></font>:<font color="#12488B"><b>~/Desktop/Minifab</b></font>$ 
+
+</pre>
